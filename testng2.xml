@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="utilities.Reporting"></listener>
+    </listeners>
+  <test name="Test">
+     <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testCases.watches_Test"/>
+      <class name="testCases.powerBank_Test"/>
+      <class name="testCases.laptop_Test"/>
+      <class name="testCases.nutritionItems_Test"/>
+      <class name="testCases.Login_Test"/>
+      <class name="testCases.bags_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

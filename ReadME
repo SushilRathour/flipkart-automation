@@ -1,0 +1,25 @@
+
+1. This project is implemented using TestNG and maven.
+
+2. Project structure is as follows:
+  a. src/test/java consist of three package:
+     PageObject: consists of locators of all cases.
+     testCases: consists of BasePage and other test cases.
+     utilities: it consists of three class files.
+        * ReadConfig: used to read the configuration file.
+        *Reporting: used to generate the report
+        *XLUtils: to read the data from excel
+     
+     
+   b.src/main/resource consists of log4j.properties file.
+
+ 3. Configuration folder contains configuration.properties file.
+   
+ 4. All the reports are maintained in Report folder.
+ 
+ 5. All log are maintained in log file.
+ 
+ 6. To run from cmd use commands:
+      mvn clean test -DtestngFile=testng.xml
+      mvn clean test -DtestngFile=testng1.xml
+      mvn clean test -DtestngFile=testng2.xml
